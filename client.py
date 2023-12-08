@@ -35,7 +35,13 @@ if __name__ == "__main__":
     # Генерація та заповнення матриць
     matrix_a, matrix_b = generate_and_fill_matrices()
 
+
     result_from_server = communicate_with_server(matrix_a, matrix_b)
+
+    # Взаємодія з сервером
+    result_from_server = communicate_with_server(matrix_a, matrix_b)
+
+    # Друк результатів
 
     print("\nResult from server:")
     print(result_from_server)

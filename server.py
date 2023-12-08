@@ -43,6 +43,9 @@ def server_listen():
                 client_socket, client_address = server_socket.accept()
                 print(f"Connected to {client_address}")
 
+
+                # Обробка кожного клієнта у власному потоці
+
                 executor.submit(handle_client, client_socket)
 
 if __name__ == "__main__":
