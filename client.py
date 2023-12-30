@@ -38,10 +38,8 @@ if __name__ == "__main__":
 
     result_from_server = communicate_with_server(matrix_a, matrix_b)
 
-    # Взаємодія з сервером
-    result_from_server = communicate_with_server(matrix_a, matrix_b)
 
-    # Друк результатів
+    result_from_server = communicate_with_server(matrix_a, matrix_b)
 
     print("\nResult from server:")
     print(result_from_server)
